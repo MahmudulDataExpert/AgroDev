@@ -1,0 +1,266 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+
+  min-height: 200vh;
+  background-image: linear-gradient(0deg, rgb(0, 112, 56), rgb(18, 236, 109));
+
+}
+::selection{
+ 
+  background: #00c954;
+}
+.wrapper{
+  width: 80%;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+margin: 200px 10%;
+position: absolute;
+z-index: -999;
+
+
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  z-index: 9999;
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+
+
+
+/*-----Upload Image---*/
+
+.upload_img{
+position: absolute;
+width: 35%;
+margin: 25% 0 0 52%;
+height: 300px;
+border: 3px dashed rgb(172, 172, 172);
+border-radius: 10px;
+
+
+}
+ .upload_img .drag{
+width: 100%;
+height: 100%;
+text-align: center;
+line-height: 120px;
+color: black;
+font-family: Arial;
+position: absolute;
+top: 10%;
+z-index: -1;
+display: flex;
+flex-direction: column;
+}
+
+
+.upload_img input{
+position: relative;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+outline: none;
+opacity: 0;
+
+}
+.drag button {
+    border-radius: 10px;
+    padding: 7px 30px;
+    width: 130px;
+    background: #19a347;
+    outline: none;
+    border: none;
+    margin-left: 35%;
+    color: white;
+    font-size: 16px;
+    
+}
+.drag img {
+    position: relative;
+    top: 30px;
+ width: 20%;
+margin-left: auto;
+margin-right: auto;
+-webkit-animation: mover 1s infinite  alternate;
+animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+0% { transform: translateY(0); }
+100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+0% { transform: translateY(0); }
+100% { transform: translateY(-10px); }
+}
+#fileName::before {
+    content: 'File Name:';
+}
+#fileName {
+    position: relative;
+    top: 10px;
+}
+ 
+
+
+/*-----from---*/
+
+.dbl-field .field i,
+.message i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: solid 2px #cccaca;
+
+}
+
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: solid 2px #cccaca;
+}
+
+.field input::placeholder,
+.message textarea::placeholder{
+  color: rgb(160, 158, 158);
+}
+.field input:focus{
+  padding-left: 47px;
+  border-bottom: solid 2px #00c278;
+}
+
+.message textarea:focus{
+  padding-left: 47px;
+  border: solid 2px #00c278;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #2b8f69;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  margin: 0 0 60px 0;
+  background: #00cc5c;
+  transition: background 0.3s ease;
+}
+.button-area button:hover{
+  background: #00bb54;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}
