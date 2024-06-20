@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barley</title>
+    <link rel="shortcut icon" href="./default-img/logo3.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	height: 100vh;
+  font-family: "Poppins", sans-serif;
+	background:rgba(240, 255, 251, 0.616);  /*----color:  #d5f0ff;---*/
+
+}
+
+
+/*============Top header============*/
+
+.double_header{
+  background: rgba(232, 250, 237, 0.9);
+ width: 100%;
+height: 70px;
+ display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+
+
+}
+
+
+.phone_email{
+ 
+display: flex;
+margin: 0 10px;
+}
+
+
+
+
+
+/*----Register-----*/
+.bn13 {
+  background-image: linear-gradient(45deg, #00af6c 0%, #00eb91   51%, #00b46f  100%);
+  color: rgb(255, 255, 255);
+  padding: 0.5em 1.2em;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  background-size: 200% auto;
+}
+
+.bn13:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  transform: scale(0.90);
+}
+
+.bn13:active {
+  transform: scale(0.95);
+}
+@keyframes bn13bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@media (max-width: 550px){
+    .bn13{
+      padding: 0.9em 2em;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 300;
+       }
+       .phone_email{
+           display: none;
+     
+       }
+      }
+  
+
+/*----Social Meadi----*/
+
+.media-social{
+  display: flex;
+}
+.media-social a{
+  height: 30px;
+  width: 30px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+ .media-social a:nth-child(1){
+  background: #4267B2;
+}
+ .media-social a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+  transform: scale(1.3);
+}
+ .media-social a:nth-child(2){
+  background: #1DA1F2;
+}
+ .media-social a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+  transform: scale(1.3);
+}
+ .media-social a:nth-child(3){
+  background: #E1306C;
+}
+ .media-social a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+  transform: scale(1.3);
+}
+.media-social a:nth-child(4){
+  background: #0077B5;
+}
+ .media-social a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+  transform: scale(1.3);
+}
+.media-social a:nth-child(5){
+  background: #FF0000;
+}
+ .media-social a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+  transform: scale(1.3);
+}
+@media (max-width: 550px){
+    .media-social a{
+      height: 30px;
+      width: 30px;
+      margin: 0 2px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      color: #fff;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+    }
+  }
+
+
+
+/*============dowen header============*/
+header{
+  z-index: 999;
+  position: fixed;
+
+  left: 0;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007045;
+  backdrop-filter: blur(8px);
+  padding:5px 60px;
+  transition: 0.6s;
+}
+ .logo img{
+width: 80px;
+height: 70px;
+margin-top: -40px;
+position: absolute; 
+filter: drop-shadow(10px 10px 10px  rgba(41, 40, 40, 0.5));
+cursor: pointer;
+
+}
+
+
+
+
+header .navigation{
+  position: relative;
+  line-height: 75px;
+  transition: 0.6s;
+  transition-property: line-height;
+}
+
+header.sticky .navigation{
+  line-height: 60px;
+ 
+
+}
+
+header.sticky{
+  position: fixed;
+  top: 0px;
+}
+
+header .navigation .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  user-select: none;
+}
+
+.menu-item > a{
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  margin: 20px;
+  padding: 25px 0;
+
+}
+
+.menu-item > a:hover{
+  color: rgb(0, 255, 106);
+  transition: 0.3s;
+}
+
+.menu-item .sub-menu{
+  position: absolute;
+  background: #292c33;
+  top: 79px;
+  line-height: 40px;
+  list-style: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  pointer-events: none;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.4s;
+  transition-property: transform, opacity;
+}
+
+header.sticky .menu-item .sub-menu,
+.menu-item .mega-box{
+  top: 65px;
+}
+
+
+.menu-item:hover .sub-menu{
+  pointer-events: all;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.menu-item .sub-menu .sub-item{
+  position: relative;
+  padding: 7px 0;
+  cursor: pointer;
+  box-shadow: inset 0px -30px 5px -30px rgba(255, 255, 255, 0.2);
+}
+
+.menu-item .sub-menu .sub-item a:hover{
+  margin-left: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.menu-item .sub-menu .sub-item a{
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 35px;
+}
+
+.menu-item .sub-menu .sub-item:hover{
+  background: #01ca6d;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-item .sub-menu .sub-item:last-child:hover{
+  border-radius: 0 0 8px 8px;
+}
+
+.menu-btn{
+  display: none;
+}
+
+
+/*----Searchbar---*/
+
+.searchBox{
+  display: flex;
+  align-items: center;
+}
+
+
+.searchToggle{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+
+.searchToggle i{
+  position: absolute;
+  color: #ffff;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+.searchToggle i.cancel{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchBox{
+  position: relative;
+}
+
+.searchBox .search-field{
+  position: absolute;
+  bottom: -85px;
+  right: 5px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.searchToggle.active ~ .search-field{
+  bottom: -74px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-field::before{
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: -4px;
+  height: 12px;
+  width: 12px;
+  background-color: #ff9900;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.search-field input{
+  height: 100%;
+  width: 100%;
+  padding: 0 45px 0 15px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #110101;
+  background-color: #ffff;
+}
+
+
+
+.search-field i{
+  position: absolute;
+  color: #b1b1b1;
+  right: 15px; 
+  font-size: 22px;
+  cursor: pointer;
+
+}
+
+/*---Megabox-----*/
+
+.menu-item:hover .mega-box{
+  opacity: 1;
+  top: 79px;
+  visibility: visible;
+  position: absolute;
+  pointer-events: all;
+
+}
+
+
+
+.mega-box{
+  position: absolute;
+
+  width: 80%;
+
+  opacity: 0;
+  visibility: hidden;
+
+
+
+
+
+
+}
+.mega-box .content{
+  background: #242526;
+  padding: 10px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  border-radius: 0 0 8px 8px;
+}
+.mega-box .content .row{
+  width: calc(25% - 00px);
+  line-height: 30px;
+
+}
+.content .row img{
+  width: 80%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+
+
+}
+.content .row p{
+  color: rgb(0, 255, 106);
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.content .row .mega-links{
+  margin-left: auto;
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+.row .mega-links li{
+  padding: 0 20px;
+  list-style: none;
+
+ 
+
+}
+.row .mega-links li a{
+
+  
+  color: #ffffff;
+  font-size: 17px;
+  display: block;
+  text-decoration: none;
+}
+.row .mega-links li a:hover{
+  color: rgb(0, 255, 106);
+}
+
+
+
+@media (max-width: 1200px){
+  header .navigation .menu{
+    position: fixed;
+    display: block;
+    background: #23252b;
+    min-width: 350px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 90px 50px;
+    visibility: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    transition-property: right, visibility;
+  }
+
+  header.sticky .navigation{
+    line-height: 75px;
+  }
+
+  header .navigation .menu.active{
+    right: 0;
+    visibility: visible;
+  }
+
+  .menu-item{
+    position: relative;
+  }
+
+  .menu-item .sub-menu{
+    opacity: 1;
+    position: relative;
+    top: 0;
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+  }
+
+.search-field{
+ left: -19px;
+}
+
+  header.sticky .menu-item .sub-menu{
+    top: 0;
+  }
+
+  .menu-item:hover .sub-menu{
+    transform: translateX(10px);
+  }
+
+  .menu-item .sub-menu .sub-item{
+    box-shadow: none;
+  }
+
+  .menu-item .sub-menu .sub-item:hover{
+    background: none;
+  }
+
+  .menu-item .sub-menu .sub-item a:hover{
+    color: rgb(0, 255, 106);
+    transition: 0.3s;
+  }
+
+
+
+  .close-btn{
+    position: absolute;
+    background: url(./default-img/close.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 25px;
+    background-position: center;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+
+  .menu-btn{
+    background: url(./default-img/menu.png)no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    display: block;
+  }
+
+  header{
+    padding: 15px 20px;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+  }
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .mega-box{
+
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  
+  .row .mega-links li{
+    margin: 0;
+  }
+
+
+}
+
+
+
+
+
+<!---barley--->
+.barleycrops{
+    margin-top: 500px;
+
+}
+
+.barleyrow{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+  padding: 10px 0px;
+    justify-content: center;
+}
+
+
+.barleyimage{
+	background: #000000;
+	position: relative;
+  flex: 1;
+	max-width: 320px;
+	height: 240px;
+	margin: 50px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.barleyimage img{
+	opacity: 1;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+  width: 100%;
+  height: 100%;
+	object-fit: cover;
+  transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.barleyimage:hover img{
+	opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.barleyimage .barleydetails{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgb(255, 255, 255);  /*rgb(0, 255, 64);*/
+	width: 100%;
+	height: 100%;
+}
+
+.barleyimage .barleydetails h2{
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 110px;
+	transition: 0.4s;
+	transition-property: transform;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.barleyimage .barleydetails h2 span{
+	font-weight: 900;
+}
+
+.barleyimage:hover .barleydetails h2{
+	transform: translateY(-30px);
+}
+
+.barleyimage .barleydetails p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.barleyimage:hover .barleydetails p{
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+.barleymore{
+	position: absolute;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	bottom: -66px;
+	transition: 0.6s;
+	transition-property: bottom;
+ 
+}
+
+.barleyimage:hover .barleymore{
+	bottom: 0;
+}
+
+.barleymore .barleyread-more{
+	color: rgb(0, 255, 64);
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+ 
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00c26b, #008f4f);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 42px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+}
+
+.barleyread-more:hover {
+  background: #df6819;
+}
+
+
+
+
+
+
+.barleymore .barleyicon-links i{
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+  text-shadow: 2px 2px 4px #000000
+}
+
+.barleymore .barleyicon-links i:hover{
+	color: rgba(255, 51, 0, 0.904);
+	font-size: 25px;
+	
+}
+
+.barleymore .barleyicon-links a:not(:last-child) i{
+	margin-right: 20px;
+}
+
+
+/*----footer-----*/
+footer{
+  position: relative;
+  background: #007045;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  
+}
+footer:hover{
+  background: linear-gradient(to right, #005c39 0%, #005f33 100%);
+}
+
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 100%;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: rgb(24, 22, 44);
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #353535a4;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  background: #ff3d0d;
+  color: white;
+}
+footer .bottom-details{
+  width: 100%;
+  background: #003f2c;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+
+
+
+
+/* Responsive CSS */
+@media (min-width: 300px){
+	.barleycrops{
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 1080px){
+	.barleyimage{
+		flex: 100%;
+		max-width: 480px;
+    height: 300px;
+	}
+  .barleyimage .barleydetails h2{
+    margin-top: 150px;
+  }
+
+}
+
+@media (max-width: 400px){
+	.barleyimage .barleydetails p{
+		font-size: 16px;
+	}
+
+	.barleymore .barleyread-more, .barleymore .barleyicon-links a i{
+		font-size: 18px;
+	}
+}
+  </style>
+  
+  </head>
+  <body>
+ 
+<!----Top header-->
+<div class="double_header" id="top">
+  <div class="media-social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+
+    <div class="phone_email">
+    <span class="phone">
+      <i class="fas fa-phone-alt"></i>
+      +98976546789
+    </span>
+    <span class="phone_email">|</span>
+    <span class="email">
+      <i class="fa fa-envelope"></i>
+         agrobd@gmail.com
+    </span>
+    </div>
+
+    <div class="log_register_buttons">
+    
+
+    <a href="login.html" class="bn13">Log In\ Register</a>
+
+    </div>
+
+</div>
+
+
+ <!-----Dowen header-->
+    <header id="header">
+             <a class="logo" href="../index.html"><img src="./default-img/logo3.png"></a>
+             
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="../index.html">Home</a></li>
+         
+         
+          <li class="menu-item">
+              <a href="../Crops_Diseases.html" class="sub-btn">Crops Diseases <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="#">Grain crops</a></li>
+                  <li class="sub-item"><a href="#">Fiber crops</a></li>
+                  <li class="sub-item"><a href="#">Pulse crop</a></li>
+                  <li class="sub-item"><a href="#">Oil crops</a></li>
+                  <li class="sub-item"><a href="#">Cash crops</a></li>
+                  <li class="sub-item"><a href="#">Vegetable crops</a></li>
+                  <li class="sub-item"><a href="#">Fruit crops</a></li>
+                  <li class="sub-item"><a href="#">Flower crops</a></li>
+                  <li class="sub-item"><a href="#">Spice crops</a></li>
+                  <li class="sub-item"><a href="#">Spring crops</a></li>
+              </ul>
+
+
+
+              <!--Mega box--
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <p>Cultivated Crops</p>
+                    <ul class="mega-links">
+                      <li><a href="Grain.html">Grain crops</a></li>
+                      <li><a href="#">Fiber crops</a></li>
+                      <li><a href="#">Pulse crop</a></li>
+                      <li><a href="#">Oil crops</a></li>
+                      <li><a href="#">Cash crops</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <img src="5.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <p>Other Crops</p>
+                    <ul class="mega-links">
+                      <li><a href="#">Vegetable crops</a></li>
+                      <li><a href="#">Fruit crops</a></li>
+                      <li><a href="#">Flower crops</a></li>
+                      <li><a href="#">Spice crops</a></li>
+                      <li><a href="#">Spring crops</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+--->
+            </li>
+            <li class="menu-item">
+              <a class="sub-btn" href="#">Problem/Solution <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-item"><a href="../Text Message/index.html">Text Message</a></li>
+                <li class="sub-item"><a href="../image upload/index.html">Image Upload</a></li>
+                <li class="sub-item"><a href="../Voice call/index.html">Voice Call</a></li>
+                <li class="sub-item"><a href="../Video Call/index.html">Video Call</a></li>
+                
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a class="sub-btn" href="#">Buy Product</a>
+              
+            </li>
+          <li class="menu-item"><a href="../Bankloan/Bankloan.html">Bank Loan</a></li>
+          <li class="menu-item"><a href="../Blog-News/index.html">Blog</a></li>
+          <li class="menu-item"><a href="../about us/index.html">About</a></li>
+          <li class="menu-item"><a href="../contact-form/index.html">Contact</a></li>
+          <div class="searchBox">
+            <div class="searchToggle">
+             <i class='fa fa-close cancel'></i>
+             <i class='fa fa-search search'></i>
+            </div>
+  
+             <div class="search-field">
+                 <input type="text" placeholder="Search...">
+                 <i class='fa fa-search'></i>
+             </div>
+         </div>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
+
+
+
+
+    <div class="barleycrops">
+<div class="barley-c">
+      <div class="barleyrow">
+
+
+        <div class="barleyimage">
+          <img src="./barley-img/Root rot disease.jpg" alt="">
+          <div class="barleydetails">
+            <h2><span>Root rot disease</span></h2>
+            
+            <div class="barleymore">
+              <a href="../Diseases-details/Barley-Root-Rot-Disease.html" class="barleyread-more">Read more</a>
+              <div class="barleyicon-links">
+                <a href="#"><i class="fas fa-thumbs-up"></i></a>
+                <a href="#"><i class='fa fa-share-alt'></i></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="barleyimage">
+          <img src="./barley-img/Head blight.png" alt="">
+          <div class="barleydetails">
+            <h2><span>Head blight</span></h2>
+            
+            <div class="barleymore">
+              <a href="../Diseases-details/Barley-Head-Blight.html" class="barleyread-more">Read more </a>
+              <div class="barleyicon-links">
+                <a href="#"><i class="fas fa-thumbs-up"></i></a>
+                <a href="#"><i class='fa fa-share-alt'></i></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+        </div>
+    </div>
+
+    
+<!----footer-->
+<footer>
+  <div class="content" data-aos="fade-up">
+    <div class="top">
+      <div class="logo-details">
+        
+        <span class="logo_name">Agro Development & Techonology</span>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">Agro</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Get started</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">Crops Dieases</a></li>
+        <li><a href="#">Expart Panel</a></li>
+        <li><a href="#">Agriculture Product</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Buy Product</li>
+        <li><a href="#">Convenience</a></li>
+        <li><a href="#">Saves time</a></li>
+        <li><a href="#">Saves Money</a></li>
+        <li><a href="#">Online tracking</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Bank Loan</li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Eligibility</a></li>
+        <li><a href="#">Required Documents</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+      <ul class="box input-box">
+        <li class="link_name">Email or Phone number</li>
+        <li><input type="text" placeholder="Enter Here..."></li>
+        <li><input type="button" value="Sent"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2022 <a href="#">Agro Development & Techonology</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+    <script src="../Script.js">
+      </script>
+
+
+  </body>
+</html>
