@@ -1,0 +1,389 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 500vh;
+  
+
+}
+::selection{
+  background:#00c26b;
+  color: #fff;
+}
+.cover{
+ 
+  width: 100%;
+  padding: 40px 10px;
+
+}
+
+.crops_list{
+  display: flex;
+
+  justify-content: space-between;
+}
+.crops_list .list{
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+
+  position: relative;
+  background-color: rgb(31, 32, 36);
+}
+.crops_list .list label{
+  height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: rgb(255, 255, 255);
+  z-index: 12;
+}
+
+#home:checked ~ .list label.Grain,
+#Fiber:checked ~ .list label.Fiber,
+#Pulse:checked ~ .list label.Pulse,
+#Oil:checked ~ .list label.Oil,
+#Cash:checked ~ .list label.Cash,
+#Vegetable:checked ~ .list label.Vegetable,
+#Fruit:checked ~ .list label.Fruit,
+#Flower:checked ~ .list label.Flower,
+#Spice:checked ~ .list label.Spice,
+#Spring:checked ~ .list label.Spring{
+  color: #fff;
+}
+.crops_list .list label:hover{
+  color: rgb(0, 255, 170);
+}
+.crops_list .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background: rgb(12, 214, 130);
+  transition: all 0.4s ease;
+}
+#Grain:checked ~ .list .slider{
+  top: 0;
+}
+#Fiber:checked ~ .list .slider{
+  top: 60px;
+}
+#Pulse:checked ~ .list .slider{
+  top: 120px;
+}
+#Oil:checked ~ .list .slider{
+  top: 180px;
+}
+#Cash:checked ~ .list .slider{
+  top: 240px;
+}
+#Vegetable:checked ~ .list .slider{
+  top: 300px;
+}
+#Fruit:checked ~ .list .slider{
+  top: 360px;
+}
+#Flower:checked ~ .list .slider{
+  top: 420px;
+}
+#Spice:checked ~ .list .slider{
+  top: 480px;
+}
+#Spring:checked ~ .list .slider{
+  top: 540px;
+}
+
+
+
+
+
+
+ .text-content{
+  width: 83%;
+
+}
+.crops_list .text{
+  display: none;
+}
+
+
+.crops_list .text-content .Grain{
+  display: block;
+}
+#Grain:checked ~ .text-content .Grain,
+#Fiber:checked ~ .text-content .Fiber,
+#Pulse:checked ~ .text-content .Pulse,
+#Oil:checked ~ .text-content .Oil,
+#Cash:checked ~ .text-content .Cash,
+#Vegetable:checked ~ .text-content .Vegetable,
+#Fruit:checked ~ .text-content .Fruit,
+#Flower:checked ~ .text-content .Flower,
+#Spice:checked ~ .text-content .Spice,
+#Spring:checked ~ .text-content .Spring{
+  display: block;
+}
+#Fiber:checked ~ .text-content .Grain,
+#Pulse:checked ~ .text-content .Grain,
+#Oil:checked ~ .text-content .Grain,
+#Cash:checked ~ .text-content .Grain,
+#Vegetable:checked ~ .text-content .Grain,
+#Fruit:checked ~ .text-content .Grain,
+#Flower:checked ~ .text-content .Grain,
+#Spice:checked ~ .text-content .Grain,
+#Spring:checked ~ .text-content .Grain{
+  display: none;
+}
+.crops_list input{
+  display: none;
+}
+
+
+
+/*----Grain*/
+
+
+
+
+
+.gcrow{
+  
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 40px 0px;
+
+}
+
+
+
+.part{
+  position: absolute;
+
+  padding: 0 50px;
+top: 330px;
+max-width: 360px;
+  display: inline-block;
+  
+}
+
+
+.part p{
+  color:rgba(43, 43, 54, 0.801);
+  font-size: 13px;
+  font-weight: 500;
+    padding: 5px;
+text-align: center;
+
+}
+
+
+.gcimage{
+	background: #000000;
+	position: relative;
+	flex: 1;
+	max-width: 320px;
+	height: 220px;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 5px;
+
+}
+
+
+
+.gcimage img{
+	opacity: 1;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.gcimage:hover img{
+	opacity: 0.7;
+}
+
+.gcimage .gcdetails{
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgb(255, 255, 255);  /*rgb(0, 255, 64);*/
+	width: 100%;
+	height: 100%;
+}
+
+.gcimage .gcdetails h2{
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 100px;
+	transition: 0.4s;
+	transition-property: transform;
+    text-shadow: 2px 2px 4px #000000
+}
+
+.gcimage .gcdetails h2 span{
+	font-weight: 900;
+}
+
+.gcimage:hover .gcdetails h2{
+	transform: translateY(-30px);
+}
+
+
+
+
+
+
+.gcmore{
+	position: absolute;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	bottom: -66px;
+	transition: 0.6s;
+	transition-property: bottom;
+}
+
+.gcimage:hover .gcmore{
+	bottom: 0;
+}
+
+.gcmore .gcread-more{
+	color: rgb(0, 255, 64);
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+
+
+  background-image: linear-gradient(-180deg, #00c26b, #008f4f);
+  border-radius: 2px;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  z-index: 9;
+  border: 0;
+}
+
+.gcread-more:hover {
+  background: #df6819;
+}
+
+
+
+
+
+
+.gcmore .gcicon-links i{
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+.gcmore .gcicon-links i:hover{
+	color: rgba(255, 51, 0, 0.904);
+	font-size: 25px;
+	
+}
+
+.gcmore .gcicon-links a:not(:last-child) i{
+	margin-right: 20px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.gcimage{
+		flex: 100%;
+		max-width: 280px;
+    height: 250px;
+    
+	}
+  .gcimage .gcdetails h2{
+	text-align: center;
+	font-size: 30px;
+
+
+
+
+}
+
+.gcimage .gcdetails h2 span{
+	font-weight: 900;
+}
+
+
+
+
+}
+
+@media (max-width: 980px){
+	.gcrow{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	row-gap: 200px;
+ 
+}
+  .gcimage{
+		flex: 100%;
+    max-width: 500px;
+    height:300px;
+     
+	}
+
+  .gcimage img{
+    min-width: 500px;
+    height:300px;
+    object-fit: cover; 
+}
+
+
+
+  .gcimage .gcdetails h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+.gcimage .gcdetails h2 span{
+	font-weight: 900;
+}
+  
+  
+  
+  .gcimage .gcdetails p{
+		font-size: 16px;
+	}
+
+	.gcmore .gcread-more, .gcmore .gcicon-links a i{
+		font-size: 18px;
+	}
+}
