@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+   background-color:  rgba(240, 255, 251, 0.616);
+
+}
+.Ufra_disease_product{
+    max-width: 100%;
+    background-color:  rgba(240, 255, 251, 0.616);
+    height: 150px;
+    padding: 50px; 
+}
+
+.ufra-product-imgs img{
+  mix-blend-mode: multiply;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+  width: fit-content;
+}
+
+
+.product-content{
+    padding: 0 1rem;
+}
+.product-title{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #0b8f33;
+text-align: center; 
+}
+
+.underline img{
+    width:fit-content;
+    height: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+
+*/
+
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    margin-bottom: 0.6;
+    transition: all 0.5s ease;
+    padding-top: 20px;
+cursor: pointer;
+}
+
+.product-detail p{
+    font-size: 1rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 1rem;
+    opacity: 0.8;
+    font-family: "Poppins", sans-serif;
+    line-height: 200%;
+}
+.product-detail ul li{
+
+    list-style: none;
+    background: url(Ufra_disease_product/checked.png)no-repeat;
+    background-size: 30px;
+    padding-left: 2rem;
+    margin: 1rem 0;
+
+    
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+}
+
+.social-links p{
+      font-weight: 600;
+
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: rgb(255, 255, 255);
+    
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.178);
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+}
+.social-links a:nth-child(2){
+    background: #4267B2;
+    
+  }
+  .social-links a:nth-child(2):hover{
+    color: #4267B2;
+    background: #fff;
+    font-size: 1.3rem;
+  }
+  .social-links a:nth-child(3){
+    background: #1DA1F2;
+  }
+  .social-links a:nth-child(3):hover{
+    color: #1DA1F2;
+    background: #fff;
+    font-size: 1.3rem;
+  }
+  .social-links a:nth-child(4){
+    background: #E1306C;
+  }
+  .social-links a:nth-child(4):hover{
+    color: #E1306C;
+    background: #fff;
+    font-size: 1.3rem;
+  }
+
+  .social-links a:nth-child(5){
+    background: #00b56a;
+
+  }
+  .social-links a:nth-child(5):hover{
+    color: #00b56a;
+    background: #fff;
+    font-size: 1.3rem;
+  }
+  .social-links a:nth-child(6){
+    background: #00a3cc;
+  }
+  .social-links a:nth-child(6):hover{
+    color: #00a3cc;
+    background: #fff;
+    font-size: 1.3rem;
+  }
+
+@media screen and (min-width: 992px){
+    .card-product{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 5rem;
+        
+    }
+    .card-wrapper-product{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ufra-product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 4rem;
+    }
+}
